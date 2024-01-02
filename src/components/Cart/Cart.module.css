@@ -2,6 +2,7 @@
   max-width: 30rem;
   background-color: #313131;
   color: white;
+  transition: all 3s;
 }
 
 .cart h2 {
