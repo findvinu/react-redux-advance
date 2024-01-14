@@ -34,9 +34,10 @@ function App() {
 
     sendCardData();
   }, [cart]);
+  console.log("cart", cart);
   return (
     <Layout>
-      {showCart && <Cart />}
+      {showCart || (cart.items.length >= 1 && <Cart />)}
       <Products />
     </Layout>
   );
